@@ -17,15 +17,17 @@
       color: #303030;
       font-weight: 400;
       margin-bottom: 30px;
-  }  
+  }
   .jumbotron {
       background-color: #1F09D9;
+      background-blend-mode: lighten;
       color: white;
-      
+
       font-family: Montserrat, Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana," sans-serif";
   }
   .container-fluid {
       padding: 50px 50px;
+      font-family: Montserrat;
   }
   .bg-grey {
       background-color: #f6f6f6;
@@ -148,7 +150,7 @@
     0% {
       opacity: 0;
       transform: translateY(70%);
-    } 
+    }
     100% {
       opacity: 1;
       transform: translateY(0%);
@@ -158,7 +160,7 @@
     0% {
       opacity: 0;
       -webkit-transform: translateY(70%);
-    } 
+    }
     100% {
       opacity: 1;
       -webkit-transform: translateY(0%);
@@ -189,16 +191,16 @@
 
 .html {width: 90%; background-color: #4CAF50;}
 .css {width: 60%; background-color: #2196F3;}
-.js {width: 35%; background-color: #f44336;}
-.php {width: 40%; background-color: #808080;}
+.js {width: 45%; background-color: #f44336;}
+.php {width: 60%; background-color: #808080;}
 .java {width: 20%; background-color: #B90E11;}
-.cc {width: 70%; background-color: #36F707;}
+.cc {width: 30%; background-color: #36F707;}
 .sql {width: 30%; background-color: #0AD7C0;}
 .python {width: 10%; background-color: #F15C03;}
 .c {width: 90%; background-color: #ECDD08;}
 
 
-.zoom {   
+.zoom {
     transition: transform .12s;
     width: 290;
     height: 210;
@@ -206,16 +208,44 @@
 }
 
 .zoom:hover {
- 
-    transform: scale(1.25); 
+
+    transform: scale(1.25);
 }
 .maintext{
 	color: black;
-	font-size: 200px;
+	font-size: 300px;
 }
 
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+  text-align: center;
+  font-size: 50px;
+  cursor: pointer ;
+  color: black;
+  font-family: Montserrat;
 
+}
 
+.containerTab {
+  padding: 20px;
+  color: black;
+}
 
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
-
+/* Closable button inside the image */
+.closebtn {
+  float: right;
+  color: black;
+  font-size: 35px;
+  cursor: pointer;
+  border-radius: 50%;
+  border-color: black;
+}
